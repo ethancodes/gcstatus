@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+.size(@w, @h) {
+  height: @h;
+  width: @w;
+}
+
+.set-size {
+  font-size: 10em;
+}
+
+.charts-container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@bg: #34495e;
+@size: 1em;
+
+.pie-wrapper {
+  .size(@size, @size);
+  float: left;
+  margin: 15px;
+  position: relative;
+  
+  &:nth-child(3n+1) {
+    clear: both;
+  }
+
+  .pie {
+    .size(100%, 100%);
+    clip: rect(0, @size, @size, @size / 2);
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    .half-circle {
+      .size(100%, 100%);
+      border: @size / 10 solid #3498db;
+      border-radius: 50%;
+      clip: rect(0, @size / 2, @size, 0);
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  .label {
+    @font-size: @size / 4;
+    @font-size-redo: @size * 4;
+
+    background: @bg;
+    border-radius: 50%;
+    bottom: @font-size-redo / 10;
+    color: #ecf0f1;
+    cursor: default;
+    display: block;
+    font-size: @font-size;
+    left: @font-size-redo / 10;
+    line-height: @font-size-redo * .65;
+    position: absolute;
+    right: @font-size-redo / 10;
+    text-align: center;
+    top: @font-size-redo / 10;
+
+    .smaller {
+      color: #bdc3c7;
+      font-size: .45em;
+      padding-bottom: 20px;
+      vertical-align: super;
+    }
+  }
+
+  .shadow {
+    .size(100%, 100%);
+    border: @size / 10 solid #bdc3c7;
+    border-radius: 50%;
+  }
+
+  &.style-2 {
+    .label {
+      background: none;
+      color: #7f8c8d;
+
+      .smaller {
+        color: #bdc3c7;
+      }
+    }
+  }
+
+  &.progress-0 { .draw-progress(0, #3498db); }
+  &.progress-1 { .draw-progress(1, #3498db); }
+  &.progress-2 { .draw-progress(2, #3498db); }
+  &.progress-3 { .draw-progress(3, #3498db); }
+  &.progress-4 { .draw-progress(4, #3498db); }
+  &.progress-5 { .draw-progress(5, #3498db); }
+  &.progress-6 { .draw-progress(6, #3498db); }
+  &.progress-7 { .draw-progress(7, #3498db); }
+  &.progress-8 { .draw-progress(8, #3498db); }
+  &.progress-9 { .draw-progress(9, #3498db); }
+  &.progress-10 { .draw-progress(10, #3498db); }
+  &.progress-11 { .draw-progress(11, #3498db); }
+  &.progress-12 { .draw-progress(12, #3498db); }
+  &.progress-13 { .draw-progress(13, #3498db); }
+  &.progress-14 { .draw-progress(14, #3498db); }
+  &.progress-15 { .draw-progress(15, #3498db); }
+  &.progress-16 { .draw-progress(16, #3498db); }
+  &.progress-17 { .draw-progress(17, #3498db); }
+  &.progress-18 { .draw-progress(18, #3498db); }
+  &.progress-19 { .draw-progress(19, #3498db); }
+  &.progress-20 { .draw-progress(20, #3498db); }
+  &.progress-21 { .draw-progress(21, #3498db); }
+  &.progress-22 { .draw-progress(22, #3498db); }
+  &.progress-23 { .draw-progress(23, #3498db); }
+  &.progress-24 { .draw-progress(24, #3498db); }
+  &.progress-25 { .draw-progress(25, #3498db); }
+  &.progress-26 { .draw-progress(26, #3498db); }
+  &.progress-27 { .draw-progress(27, #3498db); }
+  &.progress-28 { .draw-progress(28, #3498db); }
+  &.progress-29 { .draw-progress(29, #3498db); }
+  &.progress-30 { .draw-progress(30, #3498db); }
+  &.progress-31 { .draw-progress(31, #3498db); }
+  &.progress-32 { .draw-progress(32, #3498db); }
+  &.progress-33 { .draw-progress(33, #3498db); }
+  &.progress-34 { .draw-progress(34, #3498db); }
+  &.progress-35 { .draw-progress(35, #3498db); }
+  &.progress-36 { .draw-progress(36, #3498db); }
+  &.progress-37 { .draw-progress(37, #3498db); }
+  &.progress-38 { .draw-progress(38, #3498db); }
+  &.progress-39 { .draw-progress(39, #3498db); }
+  &.progress-40 { .draw-progress(40, #3498db); }
+  &.progress-41 { .draw-progress(41, #3498db); }
+  &.progress-42 { .draw-progress(42, #3498db); }
+  &.progress-43 { .draw-progress(43, #3498db); }
+  &.progress-44 { .draw-progress(44, #3498db); }
+  &.progress-45 { .draw-progress(45, #3498db); }
+  &.progress-46 { .draw-progress(46, #3498db); }
+  &.progress-47 { .draw-progress(47, #3498db); }
+  &.progress-48 { .draw-progress(48, #3498db); }
+  &.progress-49 { .draw-progress(49, #3498db); }
+  &.progress-50 { .draw-progress(50, #3498db); }
+  &.progress-51 { .draw-progress(51, #3498db); }
+  &.progress-52 { .draw-progress(52, #3498db); }
+  &.progress-53 { .draw-progress(53, #3498db); }
+  &.progress-54 { .draw-progress(54, #3498db); }
+  &.progress-55 { .draw-progress(55, #3498db); }
+  &.progress-56 { .draw-progress(56, #3498db); }
+  &.progress-57 { .draw-progress(57, #3498db); }
+  &.progress-58 { .draw-progress(58, #3498db); }
+  &.progress-59 { .draw-progress(59, #3498db); }
+  &.progress-60 { .draw-progress(60, #3498db); }
+  &.progress-61 { .draw-progress(61, #3498db); }
+  &.progress-62 { .draw-progress(62, #3498db); }
+  &.progress-63 { .draw-progress(63, #3498db); }
+  &.progress-64 { .draw-progress(64, #3498db); }
+  &.progress-65 { .draw-progress(65, #3498db); }
+  &.progress-66 { .draw-progress(66, #3498db); }
+  &.progress-67 { .draw-progress(67, #3498db); }
+  &.progress-68 { .draw-progress(68, #3498db); }
+  &.progress-69 { .draw-progress(69, #3498db); }
+  &.progress-70 { .draw-progress(70, #3498db); }
+  &.progress-71 { .draw-progress(71, #3498db); }
+  &.progress-72 { .draw-progress(72, #3498db); }
+  &.progress-73 { .draw-progress(73, #3498db); }
+  &.progress-74 { .draw-progress(74, #3498db); }
+  &.progress-75 { .draw-progress(75, #3498db); }
+  &.progress-76 { .draw-progress(76, #3498db); }
+  &.progress-77 { .draw-progress(77, #3498db); }
+  &.progress-78 { .draw-progress(78, #3498db); }
+  &.progress-79 { .draw-progress(79, #3498db); }
+  &.progress-80 { .draw-progress(80, #3498db); }
+  &.progress-81 { .draw-progress(81, #3498db); }
+  &.progress-82 { .draw-progress(82, #3498db); }
+  &.progress-83 { .draw-progress(83, #3498db); }
+  &.progress-84 { .draw-progress(84, #3498db); }
+  &.progress-85 { .draw-progress(85, #3498db); }
+  &.progress-86 { .draw-progress(86, #3498db); }
+  &.progress-87 { .draw-progress(87, #3498db); }
+  &.progress-88 { .draw-progress(88, #3498db); }
+  &.progress-89 { .draw-progress(89, #3498db); }
+  &.progress-90 { .draw-progress(90, #3498db); }
+  &.progress-91 { .draw-progress(91, #3498db); }
+  &.progress-92 { .draw-progress(92, #3498db); }
+  &.progress-93 { .draw-progress(93, #3498db); }
+  &.progress-94 { .draw-progress(94, #3498db); }
+  &.progress-95 { .draw-progress(95, #3498db); }
+  &.progress-96 { .draw-progress(96, #3498db); }
+  &.progress-97 { .draw-progress(97, #3498db); }
+  &.progress-98 { .draw-progress(98, #3498db); }
+  &.progress-99 { .draw-progress(99, #3498db); }
+  &.progress-100 { .draw-progress(100, #3498db); }
+  
+}
+
+.pie-wrapper--solid {
+  border-radius: 50%;
+  overflow: hidden;
+
+  &:before {
+    border-radius: 0 100% 100% 0 / 50%;
+    content: '';
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+  }
+  
+  .label {
+    background: transparent;
+  }
+  
+  &.progress-65 {
+    .draw-progress--solid(65, #e67e22, @bg);
+  }
+  
+  &.progress-25 {
+    .draw-progress--solid(25, #9b59b6, @bg);
+  }
+  
+  &.progress-88 {
+    .draw-progress--solid(88, #3498db, @bg);
+  }
+}
+
+// --
+.draw-progress(@progress, @color) when (@progress <= 50) {
+  .pie {
+    .right-side {
+      display: none;
+    }
+  }
+}
+
+.draw-progress(@progress, @color) when (@progress > 50) {
+  .pie {
+    clip: rect(auto, auto, auto, auto);
+
+    .right-side {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.draw-progress(@progress, @color) {
+  .pie {
+    .half-circle {
+      border-color: @color;
+    }
+
+    .left-side {
+      @rotate: @progress * 3.6;
+      transform: rotate(~'@{rotate}deg');
+    }
+  }
+}
+
+.draw-progress--solid(@progress, @color, @bg) when (@progress <= 50) {
+  &:before {
+    background: @bg;
+    transform: rotate((100 - (50 - @progress)) / 100 * 360deg * -1);
+  }
+}
+
+.draw-progress--solid(@progress, @color, @bg) when (@progress > 50) {
+  &:before {
+    background: @color;
+    transform: rotate((100 - @progress) / 100 * 360deg);
+  }
+}
+
+.draw-progress--solid(@progress, @color, @bg) {
+  background: linear-gradient(to right, @color 50%, @bg 50%);
+}
